@@ -49,8 +49,8 @@ export class Upload implements FormidableResult {
 
 @scope('request')
 export class UploadHelper {
-  @inject typeCastHelper: TypeCastHelper;
-  @inject upload: Upload;
+  @inject typeCastHelper!: TypeCastHelper;
+  @inject upload!: Upload;
 
   get<O extends TypeCastPickOption>(fields: O) {
     return this.typeCastHelper.pick(this.upload.fields, fields);

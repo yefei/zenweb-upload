@@ -7,7 +7,7 @@
       "ES2019"
     ],
     "module": "commonjs",
-    "sourceMap": true,
+    "strict": true,
     "declaration": true,
     "outDir": "./dist"
   },
